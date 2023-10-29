@@ -23,7 +23,7 @@ const Home = props => {
   return (
     <RegisterContext.Consumer>
       {value => {
-        const {isRegistered, name, displayText} = value
+        const {isRegistered, name, topic} = value
         console.log(isRegistered)
         return (
           <div>
@@ -32,7 +32,7 @@ const Home = props => {
             {isRegistered === true ? (
               <HomeContainer>
                 <Name>Hello {name}</Name>
-                <Topic>Welcome to {displayText}</Topic>
+                <Topic>Welcome to {topic}</Topic>
                 <Image
                   src="https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png"
                   alt="meetup"
