@@ -2,7 +2,7 @@ import React from 'react'
 
 const RegisterContext = React.createContext({
   name: '',
-  displayText: '',
+  topic: 'Arts and Culture',
   changeName: () => {},
   changeTopic: () => {},
   isRegistered: false,
